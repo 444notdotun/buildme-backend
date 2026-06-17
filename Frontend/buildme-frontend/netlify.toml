@@ -1,9 +1,11 @@
+cat > /home/notdotun/Desktop/GITHUB/buildme-backend/netlify.toml << 'EOF'
 [build]
-  base = "."
-  publish = "dist"
-  command = "npm run build"
+base = "Frontend/buildme-frontend"
+publish = "Frontend/buildme-frontend/dist"
+command = "npm run build"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200
+EOF
